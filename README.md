@@ -1,6 +1,6 @@
 # Ask Documents 📚
 
-This repository houses the code for "ask-documents," an interactive system that allows users to upload a document and then engage in a conversation about its contents through a chat interface. It leverages the power of OpenAI's technology to provide insightful answers to your inquiries.
+Ask Documents is an interactive application that allows users to upload a document and then engage in a conversation about its contents through a chat interface. It leverages the power of OpenAI's technology to provide insightful answers to your inquiries.
 
 ## How it Works ⚙
 
