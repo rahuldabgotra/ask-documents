@@ -25,7 +25,7 @@ public class AskDocumentsApplication {
 
 	@PostConstruct
 	public void init() {
-		Document document = loadDocument(toPath("spring-boot-reference.pdf"), new ApachePdfBoxDocumentParser());
+		Document document = loadDocument(toPath("comparison-of-human-vs-gpt.pdf"), new ApachePdfBoxDocumentParser());
 		embeddingStoreIngestor.ingest(document);
 	}
 
