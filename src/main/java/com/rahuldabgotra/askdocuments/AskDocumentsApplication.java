@@ -30,8 +30,11 @@ public class AskDocumentsApplication {
 	}
 
 	private static Path toPath(String fileName) {
+		URL fileUrl = AskDocumentsApplication.class.getClassLoader().getResource(fileName);
+		if (fileUrl == null) {
+			throw new IllegalArgumentException("File not found: " + fileName);
+		}
 		try {
-			URL fileUrl = AskDocumentsApplication.class.getClassLoader().getResource(fileName);
 			return Paths.get(fileUrl.toURI());
 		} catch (URISyntaxException e) {
 			throw new RuntimeException(e);
