@@ -1,8 +1,8 @@
-**Ask Documents: A Conversational Knowledge Base with OpenAI**
+# Ask Documents 📚
 
 This repository houses the code for "ask-documents," an interactive system that allows users to upload a document and then engage in a conversation about its contents through a chat interface. It leverages the power of OpenAI's technology to provide insightful answers to your inquiries.
 
-**How it Works**
+## How it Works ⚙
 
 1. **Document Upload:**
     - You can upload a document (currently supports PDFs) through the user interface.
@@ -15,7 +15,7 @@ This repository houses the code for "ask-documents," an interactive system that 
     - The system then searches for matching sections in the document based on your question's embedding.
     - Finally, OpenAI's large language model analyzes the retrieved sections and generates a human-readable response that addresses your question.
 
-**Diagrammatic Representation**
+### Diagrammatic Representation
 
 ```
 +------------------+         +-----------------+         +-----------------+
@@ -78,18 +78,17 @@ This diagram illustrates the flow of information throughout the project:
 10. **Human-Readable Response:** The Chat Language Model analyzes the retrieved text segments and generates a human-readable response based on their content.
 11. **Display Response to User:** The response is delivered to the user through the chat interface.
 
-
-**Spring Boot Makes it Run**
+## Powered by Spring Boot ☕ and  OpenAI
 
 This project is built using Spring Boot, a popular framework for building Java applications. Here's how to get it running on your local machine:
 
-**Prerequisites:**
+### Prerequisites:
 
 - Basic understanding of Artificial Intelligence concepts, especially machine learning and natural language processing.
 - Familiarity with Java programming is recommended. 
-- An OpenAI API key ( you can obtain one for free from [https://platform.openai.com/signup](https://platform.openai.com/signup) )
+- An OpenAI API key ( you can obtain one for free from [OpenAI Website](https://platform.openai.com/signup) )
 
-**Running the Project:**
+### Running the Project:
 
 1. Clone the Repository: Use Git to clone the "ask-documents" repository to your local machine.
 2. Set Up Dependencies: Refer to the project's documentation for instructions on installing the required libraries (dependencies) using Maven.
@@ -104,4 +103,4 @@ This project is built using Spring Boot, a popular framework for building Java a
 Once the application starts, you should be able to access the user interface (usually at http://localhost:8080) and interact with your uploaded document through the chat interface!
 
 **Note:**
-This project uses OpenAI's API, and their pricing structure may apply depending on your usage. Refer to OpenAI's documentation for details (https://openai.com/pricing).
+This project uses OpenAI's API, and their pricing structure may apply depending on your usage. Refer to OpenAI's documentation for details [OpenAI Pricing](https://openai.com/pricing).
